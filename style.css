@@ -1,103 +1,96 @@
+/* Reset simples */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-  background: #0f172a;
-  color: #e5e7eb;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
-.hero {
-  text-align: center;
-  padding: 80px 20px;
-  background: linear-gradient(135deg, #2563eb, #1e40af);
-}
-
-.hero h1 {
-  font-size: 3rem;
-}
-
-.hero p {
-  margin: 10px 0 20px;
-  font-size: 1.2rem;
-}
-
-.btn {
-  background: #e5e7eb;
-  color: #1e40af;
-  padding: 12px 25px;
-  border-radius: 30px;
+a {
+  color: #0077cc;
   text-decoration: none;
-  font-weight: bold;
 }
 
-.section {
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 90%;
   max-width: 1000px;
-  margin: 60px auto;
-  padding: 0 20px;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
-.section h2 {
-  margin-bottom: 20px;
-  font-size: 2rem;
-  border-left: 5px solid #2563eb;
-  padding-left: 15px;
+/* Header */
+header {
+  background-color: #0077cc;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
 }
 
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-}
-
-.card {
-  background: #020617;
-  padding: 25px;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-}
-
-.card h3 {
+header h1 {
+  font-size: 2.5em;
   margin-bottom: 10px;
 }
 
-.card p {
+header p {
+  font-size: 1.2em;
+}
+
+/* Seções */
+section {
+  background-color: white;
+  margin: 20px 0;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  color: #0077cc;
   margin-bottom: 15px;
 }
 
-.card a {
-  color: #60a5fa;
-  text-decoration: none;
-  font-weight: bold;
+/* Projetos */
+.projeto {
+  margin-bottom: 20px;
 }
 
-.tech {
-  display: inline-block;
-  margin-bottom: 10px;
-  font-size: 0.9rem;
-  color: #93c5fd;
+.projeto h3 {
+  font-size: 1.4em;
+  margin-bottom: 5px;
 }
 
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  list-style: none;
+/* Lists */
+ul {
+  list-style: disc inside;
+  margin-bottom: 15px;
 }
 
-.skills li {
-  background: #1e293b;
-  padding: 10px 20px;
-  border-radius: 20px;
-}
-
+/* Footer */
 footer {
   text-align: center;
-  padding: 30px;
-  background: #020617;
-  margin-top: 60px;
+  padding: 20px 0;
+  background-color: #0077cc;
+  color: white;
+  margin-top: 30px;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  section {
+    padding: 20px;
+  }
 }
